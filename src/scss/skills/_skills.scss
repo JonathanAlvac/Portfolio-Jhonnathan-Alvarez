@@ -1,0 +1,73 @@
+@use "base/variables" as v;
+
+.skills {
+    background-color: v.$colorBg2;
+    color: v.$colorBlanco;
+    padding: 5rem 2rem;
+
+    &__contenido {
+        max-width: 110rem;
+        margin: auto;
+
+        h2 {
+            font-size: 4.8rem;
+            font-family: v.$fuenteSecundaria;
+            text-align: center;
+            padding: 2rem 0;
+
+        }
+
+        .datos{
+            display: flex;
+
+            .col{
+                width: 50%;
+                padding: 0 2rem;
+
+                h3{
+                    font-size: 2.8rem;
+                    font-family: v.$fuenteSecundaria;
+                    margin-bottom: 2.5rem;
+                }
+               
+            }
+
+        }
+    }
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.skills .skill .barra-skill{
+    height: .8rem;
+    width: 80%;
+    background-color: v.$colorBg3;
+    position: relative;
+    margin-bottom: 3rem;
+
+    span{
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        background-color: v.$colorTexto;
+        border-radius: 50%;
+        line-height: 4rem;
+        text-align: center;
+        top: -17px;
+        right: -15px;
+        font-size: 14px;
+    }
+}
+
+.skills .skill .progreso{
+    background-color: v.$colorTexto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .8rem;
+}
+

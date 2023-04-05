@@ -1,0 +1,124 @@
+@use "base/variables" as v;
+
+.sobremi {
+    background-color: v.$colorBg;
+    color: v.$colorBlanco;
+    padding: 5rem 2rem;
+
+    &__contenido {
+        max-width: 110rem;
+        margin: auto;
+
+        h2 {
+            font-size: 4.8rem;
+            font-family: v.$fuenteSecundaria;
+            text-align: center;
+            padding: 2rem 0;
+
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin-bottom: 2rem;
+
+            span {
+                color: v.$colorTexto;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .datos {
+        display: flex;
+
+        .col {
+            width: 50%;
+
+            h3 {
+                font-size: 2.8rem;
+                font-family: v.$fuenteSecundaria;
+                margin-bottom: 2.5rem;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin: 1.2rem 0;
+
+                    strong {
+                        display: inline-block;
+                        color: v.$colorTexto;
+                        width: 13rem;
+                    }
+
+                    span {
+                        background-color: v.$colorTexto;
+                        padding: .3rem;
+                        font-weight: bold;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+
+    .interes{
+        width: 10rem;
+        height: 10rem;
+        background-color: v.$colorBg2;
+        border-radius: 1rem;
+        margin: 0 1.5rem 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+
+        &:hover{
+            background-color: v.$colorTexto;
+        }
+
+        i{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid v.$colorBlanco;
+    width: fit-content;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2.2rem;
+    font-size: 1.6rem;
+    color: v.$colorBlanco;
+    position: relative;
+    z-index: 10;
+
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: v.$colorTexto;
+      z-index: -1;
+      transition: 1s;  
+    }
+
+   
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}

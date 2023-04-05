@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+}
+
+* {
+        font-family: v.$fuentePrincipal;
+}
+
+*,
+*:before,
+*:after {
+        box-sizing: inherit;
+}
+
+body {
+        font-size: 1.6rem;
+        line-height: 1.5;
+}

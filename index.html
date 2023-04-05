@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Jhonnathan Alvarez</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    
+  <!--Menú Encabezado-->
+  <div class="contenedor-principal">
+    <header class="contenedor__header">
+      <div class="contenedor__logo">
+        <a href="#" class="">Jhonnathan</a>
+      </div>
+      <nav class="contenedor__nav" id="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav--responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <!--Seccion inicio-->
+  <section class="inicio" id="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="build/img/foto.jpg" alt="foto">
+      </div>
+      <h1>Jhonnathan Alvarez</h1>
+      <h2>Estudiante Ing. Sistemas - FrontEnd developer</h2>
+      <div class="redes">
+        <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class=""><i class="fa-brands fa-github"></i></a>
+        <a href="#" class=""><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--Sobre mí-->
+  <section id="sobremi" class="sobremi">
+    <div class="sobremi__contenido">
+      <h2 class="">Sobre mí</h2>
+      <p><span>Hola, soy Jhonnathan Alvarez</span> un estudiante de Ingenieria de sistemas, puedo decir que me encanta
+        la programación,
+        porque con ella puedo dar vida a mi <span>imaginación</span>, soy un eterno estudiante curioso por naturaleza.
+        Me fascina
+        saber como funcionan las cosas y,
+        quizás no sea el más inteligente pero quizá si sea el más <span>perseverante</span>. Mi familia es mi motor, mi
+        esposa es quien
+        me anima a terminar con todas mis metas. <br>
+        ¿Quién es Jhonnathan?<br>
+        Es alguien con quién puedes contar para llevar a la vida tus ideas, alguien que te dará acompañamiento
+        <span>técnico y creativo</span>,
+        conmigo tendrás el sitio web de tus sueños! <i class="fa-solid fa-face-laugh-wink"></i></i>
+      </p>
+
+      <div class="datos">
+        <!-- personal info -->
+        <div class="col">
+          <h3>Mis Datos</h3>
+          <ul>
+            <li>
+              <strong>Nacimiento</strong>
+              18-07-1995
+            </li>
+            <li>
+              <strong>Teléfono</strong>
+              (+57)3023189859 - 3158354414
+            </li>
+            <li>
+              <strong>Email Empresarial</strong>
+              jonathancodeem@gmail.com
+            </li>
+            <li>
+              <strong>Linkedin</strong>
+              <a href="https://www.linkedin.com/in/jhonnathan-alvarez-816682238/">Linkedin</a>
+            </li>
+            <li>
+              <strong>Dirección</strong>
+              Piedecuesta || Medellín => Colombia
+            </li>
+            <li>
+              <strong>Cargo</strong>
+              <span>Freelancer</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Intereses-->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-video"></i>
+              <span>Peliculas</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Tecnología</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-code"></i>
+              <span>Programar</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>Lectura</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>Juegos</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-people-roof"></i>
+              <span>Familia</span>
+            </div>
+            <div class="interes">
+              <i class="fa-sharp fa-solid fa-palette"></i>
+              <span>Diseño</span>
+            </div>
+            <div class="interes">
+              <i class="fa-sharp fa-solid fa-tree"></i>
+              <span>Naturaleza</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button>
+        Descargar Curriculum <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+  </section>
+
+  <!--Skills, habilidades-->
+  <section id="skills" class="skills">
+    <div class="skills__contenido">
+      <h2>Habilidades</h2>
+      <!--Tecnicos-->
+        <div class="datos">
+          <div class="col">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso htmlCss">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Git & Github</span>
+              <div class="barra-skill">
+                <div class="progreso gitHub">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso react">
+                  <span>10%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Bootstrap</span>
+              <div class="barra-skill">
+                <div class="progreso boots">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profesionales-->
+          <div class="col">
+            <h3>Habilidades Profesionales</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>87%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Compromiso</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </section>
 </body>
+
 </html>
